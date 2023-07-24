@@ -13,7 +13,7 @@ export function FoodForm(){
     const { Formik } = formik;
     const schema = yup.object().shape({
         name: yup.string().required('Preencher campo').typeError('Escrever texto').min(2, 'Duas letras no mínimo'),
-        image: yup.string().url('"http://www.example.com/image/"').required('Preencher campo').typeError('Escrever url da imagem')
+        image: yup.string().url('http://www.example.com/image/').required('Preencher campo').typeError('Escrever url da imagem')
     })
     
     return(
